@@ -1,10 +1,11 @@
 <div class="container">
-    <h1>My Quotes</h1>
+  <h1>Little Thoughts</h1>
+  <p class="sub">For All The Little Voices To Be Heard!</p>
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let quote of quotes, let i = index'>
           <div>
-            <button (click)='toggleDetails(i)'>See Quotes</button>
+            <button (click)='toggleDetails(i)' class="btnQ">See Quotes</button>
             <h4 *ngIf='quote.showQuoted' id={{i}} appHighlight>{{quote.quoted}}</h4>
           </div>
   
