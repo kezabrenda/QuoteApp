@@ -8,24 +8,19 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote('Brenda U. KEZA','i can do things you cannot do, you can do things i cannot do. together we can do great things','Mother Teresa',new Date(2020,11,5)),
+    new Quote('Brenda U. KEZA','i can do things you cannot do, you can do things i cannot do. together we can do great things','Mother Teresa',0,0,new Date(2020,11,5)),
   ];
 
   toggleDetails(index){
     this.quotes[index].showQuoted = !this.quotes[index].showQuoted;
   }
 
+
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.uploadedDate = new Date(quote.uploadedDate);
     this.quotes.push(quote);
-  }
-
-  completeQuote(isComplete, index){
-    if (isComplete) {
-      this.quotes.splice(index,1);
-    }
   }
 
   deleteQuote(isComplete, index){

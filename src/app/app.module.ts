@@ -16,13 +16,13 @@ import { HighlightDirective } from './highlight.directive';
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    FormsModule,
     DateCountPipe,
     HighlightDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
