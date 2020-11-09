@@ -6,7 +6,7 @@
         <div *ngFor='let quote of quotes, let i = index'>
           <div>
             <button (click)='toggleDetails(i)' class="btnQ">See Quotes</button>
-            <h4 *ngIf='quote.showQuoted' id={{i}} appHighlight>{{quote.quoted}}</h4>
+            <h4 *ngIf='quote.showQuoted' id={{i}} appHighlight class="quo"> "{{quote.quoted}}."</h4>
           </div>
   
           <div *ngIf='quote.showQuoted'>

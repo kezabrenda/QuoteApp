@@ -17,11 +17,17 @@ h1 {
     background-color: rgba(137, 43, 226, 0.37);
     font-size: 15px;
 }
+.quo{
+    font-family: 'Trochut', cursive;
+}
 #add {
     background-color: rgba(222, 184, 135, 0.808);
     width: fit-content;
     font-family: 'Great Vibes', cursive;
     font-size: xx-large;
+}
+.btn-outline-info{
+    color: rgba(0, 0, 255, 0.603);
 }
 form {
     background-color: rgba(23, 2, 43, 0.411);

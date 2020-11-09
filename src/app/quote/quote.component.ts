@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote('Brenda U. KEZA','i can do things you cannot do, you can do things i cannot do. together we can do great things','Mother Teresa',0,0,new Date(2020,11,5)),
+    new Quote('Brenda U. KEZA','I can do things you cannot do, you can do things I cannot do. Together we can do great things','Mother Teresa',0,0,new Date(2020,11,5)),
   ];
 
   toggleDetails(index){
